@@ -1,0 +1,291 @@
+/*body elements*/
+body {
+  margin: 1.5em;
+  font-family: "Poppins", sans-serif;
+  background-color: #FFFBF2;
+}
+
+/*removing underline in hyperlinks*/
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+/*background image*/
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../Images/background\ image.jpg);
+  background-size: cover;
+  background-position-x: 10%;
+  background-position-y: 10%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  animation: IntroLoad 2s forwards;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+/*changing the color of the logo*/
+.Logo {
+  color: black;
+  font-weight: bold;
+}
+
+/*display of navigation bar*/
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+nav ul a {
+  color: black;
+  padding: 0.75em 2em;
+  display: block;
+}
+nav ul a:hover {
+  background: whitesmoke;
+}
+nav .close {
+  float: right;
+  margin: 1.5em;
+  width: 2.5em;
+}
+
+/*menu elements display flex*/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header span {
+  color: red;
+}
+header svg {
+  width: 4em;
+  margin-top: -0.5em;
+  cursor: pointer;
+}
+
+/*text in the hero section*/
+hero {
+  font-size: 2rem;
+  margin-top: 1.5em;
+  line-height: 3rem;
+}
+
+.hero-text {
+  text-align: left;
+  font-size: 2.5rem;
+}
+.hero-text span {
+  color: red;
+}
+
+.subhead {
+  font-size: 0.9em;
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+
+section.hero {
+  color: #363636;
+  height: 90vh;
+}
+section.hero .down-arrow {
+  stroke: black;
+  position: absolute;
+  bottom: 1em;
+  width: 2em;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+
+/*product info text*/
+.product-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 12em;
+}
+.product-info .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.product-info .title span {
+  color: red;
+}
+.product-info desc {
+  line-height: 1.5rem;
+}
+
+/*about our store section*/
+.about-section {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 1em;
+}
+
+.about-text {
+  color: red;
+  font-style: italic;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1em;
+  margin-left: auto;
+}
+
+p {
+  font-size: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+}
+
+/*form section*/
+h1 {
+  text-align: center;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 1em;
+}
+
+/*adding the media quiery*/
+@media only screen and (min-width: 400px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media only screen and (min-width: 970px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav svg.close {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    padding: 0.5em 1.5em;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+  }
+  nav ul a:hover {
+    background: red;
+  }
+  .hero-image {
+    left: unset;
+    right: 0;
+    width: 50%;
+    filter: blur(8px);
+    -webkit-filter: none;
+  }
+  section.hero {
+    margin-top: 10em;
+  }
+  section.hero .subhead {
+    margin-top: 10em;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+  }
+  .feature img {
+    width: 25em;
+    margin-left: 25em;
+  }
+  .feature .content {
+    text-align: right;
+    width: 25em;
+  }
+  .feature.left {
+    grid-template-areas: "left right";
+  }
+  .feature.left img {
+    grid-area: left;
+    margin: auto;
+  }
+  .feature.left .content {
+    text-align: left;
+    width: 25em;
+    justify-self: left;
+  }
+}
+/* keyframes used for down arrow in hero page*/
+@keyframes IntroLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+@keyframes moveArrow {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

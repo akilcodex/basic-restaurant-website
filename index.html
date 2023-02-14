@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" href="Images/favicon.ico.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--background image-->
+    <div class="hero-image"></div>
+<!--navigation bar-->
+    <div class="wrapper">
+        <header>
+            <a href="#" class="Logo">Food<span>Magic</span></a>
+
+            <nav>
+                <svg class="close"><path fill="currentColor" d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4l-1.6 1.6z"/></svg>
+            <ul>
+                <li><a href="#" id="about">About</a></li>
+                <li><a href="#" id="products">Our Products</a></li>
+                <li><a href="#" id="contact">Contact</a></li>
+            </ul>
+ 
+        </nav>
+        <!--svg image-->
+        <svg class="menu" viewBox="0 0 24 24"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M3 4h18v2H3V4zm6 7h12v2H9v-2zm-6 7h18v2H3v-2z"/> </g> </svg>
+
+        </header>
+<!--text in the hero page-->
+        <section class="hero">
+                <h1 class="hero-text">Food that make you say <span>WOW</span>!</h1>
+            <p class="subhead">The best traditional food in Elbasan. <br>
+            A city in the middle of Albania known for his history, castle and delicious food.</p>
+
+            <svg class="down-arrow" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg>
+        </section>
+<!--product information section-->
+        <section class="product-info">
+
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Bread + Pie <span class="price">0.50 Euro</span></p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat sapiente reiciendis neque assumenda. Assumenda consequuntur quo ullam, adipisci eius deleniti!
+                    </p>
+                </div>
+                <img src="/Images/bugace.png" alt="Bugace">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Bread + Kofta <span class="price">0.50 Euro</span></p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iste, aliquid molestias numquam exercitationem placeat.
+                    </p>
+                </div>
+                <img src="/Images/buke me qofte.png" alt="Buke me qofte">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Small Pie <span class="price">0.50 Euro</span></p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iste, aliquid molestias numquam exercitationem placeat.
+                    </p>
+                </div>
+                <img src="/Images/byrek te vegjel.png" alt="Byrek te vegjel">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Homade Pie <span class="price">0.50 Euro</span></p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iste, aliquid molestias numquam exercitationem placeat.
+                    </p>
+                </div>
+                <img src="/Images/byrek.png" alt="Byrek shtepie">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Calzione <span class="price">0.50 Euro</span></p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iste, aliquid molestias numquam exercitationem placeat.
+                    </p>
+                </div>
+                <img src="/Images/pite me sallam.png" alt="Pite me sallam">
+            </div>
+        </section>
+<!--about section-->
+        <section class="about-section">
+            <h1 class="about-text">About our store.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus quod nobis, voluptate ullam ratione natus perferendis similique rerum odio voluptatem, alias nulla facere quis fugiat distinctio? Sapiente aut, laboriosam illo odio eligendi deserunt ad eos, nemo facilis voluptas voluptatibus.</p>
+        </section>
+<!--form section contact us-->
+        <section class="contact-us">
+            <div class="container">
+                <h1>Contact Us:</h1>
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
